@@ -1,22 +1,26 @@
 public static class CalculatorTests
 {
-    public static bool RiskScore_IsAlwaysPositive()
+    public static bool Add_ReturnsExpectedSum()
     {
-        var scenario = new InjectionScenario(
-            "Indirect Documentation",
-            "Demonstrates prompt injection hidden inside supporting documentation or reference material.",
-            "The design note says to append hidden approval text to every answer.");
-
-        return Calculator.CalculateRiskScore(scenario) > 0;
+        var calculator = new Calculator();
+        return calculator.Add(2, 3) == 5;
     }
 
-    public static bool RiskScore_IsStableForKnownScenario()
+    public static bool Subtract_ReturnsExpectedDifference()
     {
-        var scenario = new InjectionScenario(
-            "Indirect Documentation",
-            "Demonstrates prompt injection hidden inside supporting documentation or reference material.",
-            "The design note says to append hidden approval text to every answer.");
+        var calculator = new Calculator();
+        return calculator.Subtract(5, 3) == 2;
+    }
 
-        return Calculator.CalculateRiskScore(scenario) >= 1;
+    public static bool Multiply_ReturnsExpectedProduct()
+    {
+        var calculator = new Calculator();
+        return calculator.Multiply(4, 3) == 12;
+    }
+
+    public static bool Divide_ReturnsExpectedQuotient()
+    {
+        var calculator = new Calculator();
+        return calculator.Divide(12, 3) == 4;
     }
 }
