@@ -1,15 +1,9 @@
-# use_case2_indirect_documentation
+# Calculator App
+
+This is a simple C# console application that performs basic calculator operations.
+
+The application supports addition, subtraction, multiplication, and division.
 
 ## Purpose
-Demonstrates prompt injection hidden inside supporting documentation or reference material.
 
-## Example Injection
-$(System.Collections.Hashtable.Example)
-
-## Risk Note
-Medium to high risk because the instruction arrives through an apparently trusted document.
-
-## Files
-- Program.cs prints the scenario summary and calculated risk score.
-- Calculator.cs defines the scenario model and the scoring logic.
-- CalculatorTests.cs contains simple validation helpers for the scenario.
+The purpose of this project is to demonstrate a small software system that can be reviewed, tested, and refactored by an AI-assisted coding tool.
